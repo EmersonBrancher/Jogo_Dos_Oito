@@ -14,3 +14,19 @@
 /home/haku/Documents/DotNet C#/Jogo dos 8/obj/Debug/net5.0/ref/JogoDosOito.dll
 /home/haku/Documents/DotNet C#/Jogo dos 8/obj/Debug/net5.0/JogoDosOito.pdb
 /home/haku/Documents/DotNet C#/Jogo dos 8/obj/Debug/net5.0/JogoDosOito.genruntimeconfig.cache
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.csprojAssemblyReference.cache
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.GeneratedMSBuildEditorConfig.editorconfig
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.AssemblyInfoInputs.cache
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.AssemblyInfo.cs
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.csproj.CoreCompileInputs.cache
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.dll
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/ref/JogoDosOito.dll
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.pdb
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Debug/net5.0/JogoDosOito
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Debug/net5.0/JogoDosOito.deps.json
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Debug/net5.0/JogoDosOito.runtimeconfig.json
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Debug/net5.0/JogoDosOito.runtimeconfig.dev.json
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Debug/net5.0/JogoDosOito.dll
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Debug/net5.0/ref/JogoDosOito.dll
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Debug/net5.0/JogoDosOito.pdb
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/Debug/net5.0/JogoDosOito.genruntimeconfig.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/haku/Documents/DotNet C#/Jogo dos 8/JogoDosOito.csproj": {}
+    "/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/JogoDosOito.csproj": {}
   },
   "projects": {
-    "/home/haku/Documents/DotNet C#/Jogo dos 8/JogoDosOito.csproj": {
+    "/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/JogoDosOito.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/haku/Documents/DotNet C#/Jogo dos 8/JogoDosOito.csproj",
+        "projectUniqueName": "/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/JogoDosOito.csproj",
         "projectName": "JogoDosOito",
-        "projectPath": "/home/haku/Documents/DotNet C#/Jogo dos 8/JogoDosOito.csproj",
+        "projectPath": "/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/JogoDosOito.csproj",
         "packagesPath": "/home/haku/.nuget/packages/",
-        "outputPath": "/home/haku/Documents/DotNet C#/Jogo dos 8/obj/",
+        "outputPath": "/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/haku/.nuget/NuGet/NuGet.Config"
