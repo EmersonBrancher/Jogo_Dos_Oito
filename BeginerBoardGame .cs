@@ -12,7 +12,7 @@ public class BeginerBoardGame
     {
         {"A","B","C"},
         {"D","E","F"},
-        {"G","H"," "}
+        {"G","H","-"}
     };    
 
     public void PopulateBoardGame()
@@ -25,7 +25,7 @@ public class BeginerBoardGame
         LoadBeginerBoardGame.Add("F");
         LoadBeginerBoardGame.Add("G");
         LoadBeginerBoardGame.Add("H");
-        LoadBeginerBoardGame.Add(" ");
+        LoadBeginerBoardGame.Add("-");
 
         Random shuffle = new Random();
 

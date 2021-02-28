@@ -22,55 +22,99 @@ class MainFunction
     public static string ValidateMove(string inputMove, string[,] boardGameShuffle)
     {
         string [] allowedMoves = new string [25];
+        string returnValidation;
         int xUserLocation = -1;
         int yUserLocation = -1;
 
         inputMove.ToUpper();
-Console.WriteLine("Passou as declarações");
-        for (int xAxis = 0; xAxis < boardGameShuffle.Length; xAxis++)
+
+        for (int xAxis = 0; xAxis < Math.Sqrt(boardGameShuffle.Length); xAxis++)
         {
-            for (int yAxis = 0; yAxis < boardGameShuffle.Length; yAxis++)
+            for (int yAxis = 0; yAxis < Math.Sqrt(boardGameShuffle.Length); yAxis++)
             {
-Console.WriteLine("lado de fora do primeiro if");
-                if (boardGameShuffle[xAxis,yAxis].Equals(" "))
+                if (boardGameShuffle[xAxis,yAxis].Equals("-"))
                 {
                     xUserLocation = xAxis;
                     yUserLocation = yAxis;
-Console.WriteLine("lado de dentro do primeiro if");                    
                 }
-            }
-Console.WriteLine("lado de fora do primeiro par de loop");
-            
+            }            
         }     
 
-        for (int xAxis = 0; xAxis < boardGameShuffle.Length; xAxis++)
+        if (xUserLocation == 0 && yUserLocation == 0)
         {
-            allowedMoves[xAxis] = boardGameShuffle[xAxis, yUserLocation];
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation + 1], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation + 1, yUserLocation], 1);
+        } 
+        else if (xUserLocation == 0 && yUserLocation == 1)
+        {
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation - 1], 0);            
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation + 1], 1);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation + 1, yUserLocation], 2);
+        }
+        else if (xUserLocation == 0 && yUserLocation == 2)
+        {
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation - 1], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation + 1, yUserLocation], 1);
+        }        
+        else if (xUserLocation == 1 && yUserLocation == 0)
+        {
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation - 1, yUserLocation], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation + 1, yUserLocation], 1);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation + 1], 2);
+        }
+        else if (xUserLocation == 1 && yUserLocation == 1)
+        {
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation - 1, yUserLocation], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation + 1, yUserLocation], 1);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation - 1], 2);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation + 1], 3);
+        }
+        else if (xUserLocation == 1 && yUserLocation == 2)
+        {
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation - 1, yUserLocation], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation - 1], 1);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation + 1, yUserLocation], 2);
+        }
+        else if (xUserLocation == 2 && yUserLocation == 0)
+        {
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation - 1, yUserLocation], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation + 1], 1);
+        }
+        else if (xUserLocation == 2 && yUserLocation == 1)
+        {
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation - 1, yUserLocation], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation - 1], 1);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation + 1], 2);
+        }
+        else if (xUserLocation == 2 && yUserLocation == 2)
+        {           
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation - 1, yUserLocation], 0);
+            allowedMoves.SetValue(boardGameShuffle[xUserLocation, yUserLocation - 1], 1);
         }
 
         if (Array.IndexOf(allowedMoves, inputMove) > -1)
         {
-            for (int xAxis = 0; xAxis < boardGameShuffle.Length; xAxis++)
+            for (int xAxis = 0; xAxis < Math.Sqrt(boardGameShuffle.Length); xAxis++)
             {
-                for (int yAxis = 0; yAxis < boardGameShuffle.Length; yAxis++)
+                for (int yAxis = 0; yAxis < Math.Sqrt(boardGameShuffle.Length); yAxis++)
                 {
                     if (boardGameShuffle[xAxis,yAxis] == inputMove )
-                    {
-                        boardGameShuffle[yAxis,yAxis] = " ";
-                        boardGameShuffle[xUserLocation, yUserLocation] = inputMove;
+                    {   
+                        boardGameShuffle.SetValue("-", xAxis, yAxis);
+                        boardGameShuffle.SetValue(inputMove, xUserLocation, yUserLocation);                       
                         break;
                     }
                 }
             }
-
-        } else 
+        } else if (inputMove.ToUpper() == "SAIR")
+        {
+            returnValidation = "SAIR";
+            return returnValidation;
+        }
+        else
         {
             Console.WriteLine("Movimento inválido.");
         }
-        
         return null;
-
-
     }
-
 }
