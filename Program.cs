@@ -9,11 +9,11 @@ namespace JogoDosOito
             string choice;
             do
             {
-                choice = MainMenu.WriteMenu();
+                choice = MainFunction.WriteMenu();
                 switch (choice)
                 {
                     case "1":
-                        IntermediaryGame.ConsoleBoard();
+                        BeginerGame.ConsoleBoard();
                         break;
                     case "2":
                         Console.WriteLine("Escolheu 2");
