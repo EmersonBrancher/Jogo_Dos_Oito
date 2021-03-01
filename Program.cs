@@ -13,16 +13,16 @@ namespace JogoDosOito
                 switch (choice)
                 {
                     case "1":
-                        BeginerGame.ConsoleBoard();
+                        BeginnerGame.ConsoleBoard();
                         break;
                     case "2":
-                        Console.WriteLine("Escolheu 2");
+                        IntermediaryGame.ConsoleBoard();
                         break;
                     case "3":
-                        Console.WriteLine("Escolheu 3");
+                        AdvancedGame.ConsoleBoard();
                         break;
                     case "4":
-                        Console.WriteLine("Escolheu 4");
+                        MainFunction.WriteHowToPlay();
                         break;
                     default:
                         choice = "Done";

@@ -1,25 +1,25 @@
 using System;
 
-public class BeginerGame 
+public class BeginnerGame 
 {
     public static void ConsoleBoard()
     {
         string move;
         int counterMove = 0;
-        BeginerBoardGame boardGame = new BeginerBoardGame();
+        BeginnerBoardGame boardGame = new BeginnerBoardGame();
 
         boardGame.PopulateBoardGame();
 
-        if (boardGame.ValidadeBeginerBoardSolution())
+        if (boardGame.ValidadeBeginnerBoardSolution())
         {
         }
         else
         {
             do
             {
-                boardGame.WriteBeginerBoardGame();
+                boardGame.WriteBeginnerBoardGame();
                 move = Console.ReadLine();
-                if (MainFunction.ValidateMove(move.ToUpper(), boardGame.beginerBoardGameShuffle) == "SAIR")
+                if (MainFunction.ValidateMove(move.ToUpper(), boardGame.beginnerBoardGameShuffle) == "SAIR")
                 {
                     break;
                 } 
@@ -28,8 +28,8 @@ public class BeginerGame
                     counterMove++;
                 }
             }
-            while(boardGame.ValidadeBeginerBoardSolution() == false);
-            boardGame.WriteBeginerBoardGame();
+            while(boardGame.ValidadeBeginnerBoardSolution() == false);
+            boardGame.WriteBeginnerBoardGame();
             Console.WriteLine($"Quantidade de movimento: {counterMove}");
                         
         }

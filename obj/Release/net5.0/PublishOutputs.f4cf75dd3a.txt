@@ -1,0 +1,5 @@
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Release/net5.0/publish/JogoDosOito
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Release/net5.0/publish/JogoDosOito.dll
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Release/net5.0/publish/JogoDosOito.deps.json
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Release/net5.0/publish/JogoDosOito.runtimeconfig.json
+/home/haku/Documents/DotNet C#/Jogo_Dos_Oito/bin/Release/net5.0/publish/JogoDosOito.pdb
